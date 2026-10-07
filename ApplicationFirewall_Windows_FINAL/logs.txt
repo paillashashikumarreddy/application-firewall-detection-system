@@ -1,0 +1,27 @@
+=== Application Firewall Logs ===
+Logs will be written here when attacks are blocked.
+2026-03-13 06:46:41.116252 | 127.0.0.1 | XSS Attack
+2026-03-29 23:57:52.656357 | XSS Attack BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user=<script>alert(1)</script>
+2026-03-29 23:57:53.572762 | XSS Attack BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user=<script>alert(1)</script>
+2026-03-30 00:04:36.664305 | XSS Attack BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user=<script>alert(1)</script>
+2026-03-30 00:04:37.175333 | XSS Attack BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user=<script>alert(1)</script>
+2026-03-30 06:13:58.967755 | SQL Injection BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user='%20or%201=1
+2026-03-30 06:14:10.186586 | XSS Attack BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user=<script>alert(1)</script>
+2026-03-30 06:14:11.183837 | XSS Attack BLOCKED | IP: 127.0.0.1 | URL: http://127.0.0.1:5000/login?user=<script>alert(1)</script>
+2026-03-30 06:17:08.214246 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-03-30 06:17:08.216240 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-03-30 06:31:44.288095 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-03-30 06:31:44.290345 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-03-30 22:49:11.729423 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-03-30 22:49:11.737467 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-04-19 09:54:26.404866 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-04-19 09:54:26.411616 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-04-19 10:02:37.218890 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-04-19 10:02:37.223062 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-04-19 10:16:03.611760 | SQL Injection BLOCKED | IP: 127.0.0.1 | URL: http://localhost:5000/test?id=1'%20or%20'1'='1
+2026-04-21 22:42:24.744870 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-04-21 22:42:24.747408 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-04-22 12:35:51.534511 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-04-22 12:35:51.540802 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
+2026-04-22 12:40:35.058808 | SQL Injection BLOCKED | IP: None | URL: http://localhost/login?user='%20or%201=1
+2026-04-22 12:40:35.060296 | XSS Attack BLOCKED | IP: None | URL: http://localhost/login?user=<script>alert(1)</script>
